@@ -12,8 +12,8 @@
 }body{
     background-color: aliceblue;
 }.left ul li:nth-child(2) svg{
-       height: 28px;
-       width: 28px;
+       height: 24px;
+       width: 24px;
 }.left ul li:nth-child(4){
     background: url(./black\ and\ white\ line\ drawing.webp) center/cover no-repeat;
 }header{
@@ -24,37 +24,44 @@
     flex-direction: row;
     width: 100vw;
     background-color: white;
-    padding: 2px 15px;
+    padding: 3px 15px;
     position: fixed;
+    box-shadow: 5px -2px 20px 0px #0000005c;
 }.center ul,.left ul{
     display: flex;
 }.center ul li,.left ul{
     list-style: none;
 }#search{
     border: none;
-    padding: 15px;
-    background-color: transparent;
+    padding: 11px 10px;
+    background: none;
     border: none;
     appearance: none;
     position: relative;
-}.right{
+}#search::placeholder{
+    width: 100%;
+    background: none;
+}
+.right{
     display: flex;
     align-items: center;
 }#search:focus{
     outline: none;
+    background: none;
 }.fa-brands, .fab {
     font-weight: 400;
-    color: #3c66ff;
-    font-size: 45px;
+    color: #1846eeda;
+    font-size: 40px;
 }.right a{
     margin-right: 20px;
 }.right div{
     display: flex;
     align-items: center;
-    background-color: rgb(239 195 195 / 21%);
+    background-color: rgba(250, 225, 225, 0.699);
     border-radius: 25px;
     padding: 0 15px;
     justify-content: space-evenly;
+    margin: 5px 0;
 }.center ul li:hover{
     background-color: #00000015;
     border-radius: 10px;
@@ -71,15 +78,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.4s ease-out;
+    margin: 0 3px;
 }.left ul li{
     height: 100%;
-    width: 45px;
+    width: 40px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 -20px;
     background-color: #00000015;
+    transition: 0.4s ease-in-out;
 }.left ul {
     display: flex;
     margin: 0 auto;
@@ -87,5 +97,5 @@
     height: 40px;
     justify-content: space-around; 
 }.left ul li:hover{
-    background-color: #00000046;
+    background-color: #00000021;
 }
